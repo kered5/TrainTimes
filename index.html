@@ -23,11 +23,11 @@
 
   <body>
 
-    <!-- Employee Tracker -->
+    <!-- Train Tracker -->
     <div class="container">
 
       <!-- Jumbotron -->
-      <div class="jumbotron" style="background-color: black; color: white">
+      <div class="jumbotron" style="background-color: green; color: white">
         <h1 class="text-center">Train Timetable</h1>
         <h3 class="text-center">Add new trains as necessary</h3>
       </div>
@@ -47,10 +47,10 @@
                   <tr>
                     <th>Train Name</th>
                     <th>Destination</th>
-                    <th>First train time</th>
                     <th>Frequency</th>
+                    <th>Next Arrival</th>
                     <th>Minutes away</th>
-<!--                     <th>Total Billed ($)</th> -->
+
                   </tr>
                 </thead>
                 <tbody>
@@ -59,7 +59,7 @@
             </div>
           </div>
 
-          <!-- Add Employee  -->
+          <!-- Add Train  -->
           <div class="panel panel-primary">
             <div class="panel-heading">
               <h3 class="panel-title"><strong>Add Train</strong></h3>
@@ -69,7 +69,7 @@
               <!-- Entry Form -->
               <form>
                 <div class="form-group">
-                  <label for="employee-name-input">Train name</label>
+                  <label for="train-name-input">Train name</label>
                   <input class="form-control" id="train-name-input" type="text">
                 </div>
                 <div class="form-group">
@@ -77,14 +77,14 @@
                   <input class="form-control" id="destination-input" type="text">
                 </div>
                 <div class="form-group">
-                  <label for="time-input">First train time</label>
+                  <label for="time-input">First train time (HH:MM)</label>
                   <input class="form-control" id="time-input" type="text">
                 </div>
                 <div class="form-group">
                   <label for="frequency-input">Frequency</label>
                   <input class="form-control" id="frequency-input" type="text">
                 </div>
-                <button class="btn btn-primary" id="add-employee-btn" type="submit">Submit</button>
+                <button class="btn btn-primary" id="add-train-btn" type="submit">Submit</button>
               </form>
 
             </div>
